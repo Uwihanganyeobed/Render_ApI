@@ -10,7 +10,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 app.use('/',(req,res)=>{
-   const postApi=[
+   const productApi=[
    {
      "id": "660971837d4adc2b4f09e997",
      "productCategory": "Electronics",
@@ -47,6 +47,6 @@ app.use('/',(req,res)=>{
      "productDescription": "Comfortable sofa for your living room"
    }
  ]
-   res.json(postApi)
+   res.json(productApi)
 })
 app.listen(()=>app.listen(PORT,()=>console.log(`Server running on port ${PORT}`)))
